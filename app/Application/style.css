@@ -1,0 +1,261 @@
+@font-face{font-family:'proxima_nova';src:url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_thin_1.eot');src:url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_thin_1.eot?#iefix') format('embedded-opentype'),url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_thin_1.woff') format('woff'),url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_thin_1.ttf') format('truetype');font-weight:100;font-style:normal}@font-face{font-family:'proxima_nova';src:url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_regular_1.eot');src:url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_regular_1.eot?#iefix') format('embedded-opentype'),url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_regular_1.woff') format('woff'),url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_regular_1.ttf') format('truetype');font-weight:400;font-style:normal}@font-face{font-family:'proxima_nova';src:url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_semibold_1.eot');src:url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_semibold_1.eot?#iefix') format('embedded-opentype'),url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_semibold_1.woff') format('woff'),url('https://glue-static.s3-external-3.amazonaws.com/fonts/proxima_nova_semibold_1.ttf') format('truetype');font-weight:600;font-style:normal}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+  color: #88898c;
+  background-color: #121314;
+  overflow-y: auto;
+}
+
+ul {
+  padding: 0;
+}
+
+table {
+  border-spacing: 0;
+}
+
+body {
+  font-family: 'proxima_nova','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  color: #88898c;
+  margin: 20px;
+  padding-bottom: 100px;
+}
+
+a {
+  color: #dfe0e6;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+
+a:focus {
+  outline: none;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+.hdr-xxl, .hdr-xl, .hdr-l, .hdr-m, .hdr-sm, .hdr-xsm, h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+  color: #dfe0e6;
+  cursor: default;
+}
+
+h1, .hdr-xxl {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.application {
+	opacity: 1;
+}
+
+.application.loading {
+	opacity: 0.2;
+	transition: opacity 600ms;
+}
+
+.media, .media-bd {
+  overflow: hidden;
+}
+
+.media-img {
+  float: left;
+}
+
+.header-artist .media-img {
+  width: 130px;
+  margin-right: 20px;
+}
+
+.media.artist .media-img img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.media-actions button {
+  margin-right: 5px;
+}
+
+.artist-avatar {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.header-label {
+  color: #88898c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.button, button {
+  background: rgba(0,0,0,.2);
+  border: 1px solid #88898c;
+  border-radius: 500px;
+  color: #dfe0e6;
+  cursor: default;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  height: 28px;
+  letter-spacing: 1.5px;
+  line-height: 26px;
+  margin-bottom: 0;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-primary {
+  background-color: #648f00!important;
+  border-color: #648f00!important;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.tl-cell {
+  min-width: 30px;
+}
+
+.tl-cell-pos {
+  text-align: center;
+}
+
+.tl-cell .button-play {
+  display: none;
+  padding: 0 8px;
+  letter-spacing: 0;
+}
+
+.tl-cell:hover .button-play {
+  display: block;
+}
+
+.tl-cell:hover .tl-number-wrap {
+  display: none;
+}
+.section-divider {
+  border-bottom: 1px solid #222326;
+  margin: 0 0 16px;
+  padding: 26px 0 4px;
+  position: relative;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  font-size: 14px;
+  color: #88898c;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.h-title {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.related-artists, .artist-albums {
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+
+.related-artists li, .artist-albums li {
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.related-artists li .info, .artist-albums li .info {
+  background-color: #222326;
+  padding: 13px 8px 4px;
+  height: 90px;
+}
+
+.album-header .album.media img{
+  max-width: 300px;
+}
+
+.player {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #333;
+  background-color: #222326;
+  z-index: 10;
+  width: 100%;
+  padding: 10px;
+  margin: 0 -20px;
+
+  display: flex;
+  flex-flow: row;
+}
+
+.player #progressbar {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#elapsed, #remaining {
+  display: block;
+  font-size: 11px;
+  margin: 20px 0;
+  width: 35px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.progress-bar-wrapper, .progress-bar-wrapper-thick {
+  height: 10px;
+  position: relative;
+}
+
+.player .progress-bar-wrapper {
+  height: 35px;
+}
+
+.progress-bar, .progress-bar .inner {
+  background: #3e3e40;
+  border-radius: 2px;
+  height: 4px;
+  left: 0;
+  margin-top: -2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.progress-bar .inner, .progress-bar-thick .inner {
+  background: #84bd00;
+  bottom: 0;
+  height: inherit;
+  left: 0;
+  position: absolute;
+  right: auto;
+}
+
+.navbar {
+  text-transform: uppercase;
+}
