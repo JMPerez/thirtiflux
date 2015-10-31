@@ -12,7 +12,7 @@ Spotify Web Player using [Spotify Web API](https://developer.spotify.com/web-api
 * Browse
 * Server prerendering
 * Relay-like. See http://arqex.com/1058/define-the-data-to-fetch-declaratively-with-react
-* 
+
 ## Installation
 
 Just clone this repo and change the `origin` git remote.
